@@ -52,7 +52,11 @@ const Introduction = () => {
             <h1 className="text-5xl font-bold text-white">
               Hello, I'm Md Shamim
             </h1>
-            <p className="py-6 text-lg text-white">Frontend Web Developer</p>
+            <h2 className="text-2xl text-white my-4">Frontend Web Developer</h2>
+            <p className="text-lg text-white">
+            I have expertise in HTML, CSS, JavaScript, <br /> React, Express.js, and MongoDB.
+            I  <br /> specialize in building responsive websites <br /> and aim to become a professional <br /> MERN stack web developer.
+          </p>
             <a
               href="path_to_your_resume.pdf"
               className="btn btn-primary inline-block mt-4 px-6 py-3 rounded-lg text-white font-semibold bg-blue-500 hover:bg-blue-600"

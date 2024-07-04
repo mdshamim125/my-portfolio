@@ -1,52 +1,61 @@
 import React from "react";
+import toast from "react-hot-toast";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    toast.success("Message sent successfully...");
+    e.target.reset();
+  };
   return (
-    <section id="contact" className="min-h-screen bg-white dark:bg-gray-900">
+    <section id="contact" className="min-h-screen bg-black dark:bg-gray-900">
       <div className="container px-6 py-10 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-10">
           <div className="lg:w-1/2 lg:mx-10">
-            <h1 className="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl">
+            <h1 className="text-2xl font-semibold text-white capitalize dark:text-white lg:text-3xl">
               Let’s talk
             </h1>
 
-            <p className="mt-4 text-gray-500 dark:text-gray-400">
+            <p className="mt-4 text-white dark:text-gray-400">
               Ask me everything and I would love to hear from you
             </p>
 
-            <form className="mt-12">
+            <form onSubmit={handleSubmit} className="mt-12">
               <div className="-mx-2 md:items-center md:flex">
                 <div className="flex-1 px-2">
-                  <label className="block mb-2 text-lg text-gray-600 dark:text-gray-200">
+                  <label className="block mb-2 text-lg text-white dark:text-gray-200">
                     Full Name
                   </label>
                   <input
                     type="text"
                     placeholder="Enter Your Name"
-                    className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                    required
+                    className="block w-full px-5 py-3 mt-2 text-white placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
                 </div>
 
                 <div className="flex-1 px-2 mt-4 md:mt-0">
-                  <label className="block mb-2 text-lg text-gray-600 dark:text-gray-200">
+                  <label className="block mb-2 text-lg text-white dark:text-gray-200">
                     Email Address
                   </label>
                   <input
                     type="email"
                     placeholder="Enter Your Email Address"
-                    className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                    required
+                    className="block w-full px-5 py-3 mt-2 text-white placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
                 </div>
               </div>
 
               <div className="w-full mt-4">
-                <label className="block mb-2 text-lg text-gray-600 dark:text-gray-200">
+                <label className="block mb-2 text-lg text-white dark:text-gray-200">
                   Message
                 </label>
                 <textarea
-                  className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full h-32 px-5 py-3 mt-2 text-white placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   placeholder="Message"
+                  required
                 ></textarea>
               </div>
 
@@ -85,7 +94,7 @@ const Contact = () => {
                   />
                 </svg>
 
-                <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
+                <span className="mx-2 text-white truncate w-72 dark:text-gray-400">
                   Rangpur, Bangladesh
                 </span>
               </p>
@@ -106,7 +115,7 @@ const Contact = () => {
                   />
                 </svg>
 
-                <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
+                <span className="mx-2 text-white truncate w-72 dark:text-gray-400">
                   +8801710534833
                 </span>
               </p>
@@ -127,7 +136,7 @@ const Contact = () => {
                   />
                 </svg>
 
-                <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
+                <span className="mx-2 text-white truncate w-72 dark:text-gray-400">
                   cse12005038brur@gmail.com
                 </span>
               </p>
