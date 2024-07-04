@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <section id="contact" className="min-h-screen bg-black dark:bg-gray-900">
       <div className="container px-6 py-10 mx-auto">
-        <div className="lg:flex lg:items-center lg:-mx-10">
+        <div className="lg:flex lg:items-center lg:-mx-10 animate__animated animate__fadeInLeft">
           <div className="lg:w-1/2 lg:mx-10">
             <h1 className="text-2xl font-semibold text-white capitalize dark:text-white lg:text-3xl">
               Let’s talk
@@ -65,7 +65,7 @@ const Contact = () => {
             </form>
           </div>
 
-          <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
+          <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10 animate__animated animate__fadeInRightBig">
             <img
               className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96"
               src="https://i.ibb.co/RPbKHWp/IMG-4539.jpg"
@@ -143,7 +143,7 @@ const Contact = () => {
             </div>
 
             <div className="mt-6 w-80 md:mt-8">
-              <h3 className="text-gray-600 dark:text-gray-300">
+              <h3 className="text-white dark:text-gray-300">
                 Contact me with
               </h3>
 

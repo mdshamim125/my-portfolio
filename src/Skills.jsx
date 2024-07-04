@@ -1,9 +1,9 @@
 import React from "react";
-
+import "animate.css";
 const Skills = () => {
   return (
     <div id="skills" className="py-20 bg-base-200">
-      <div className="text-center">
+      <div className="text-center animate__animated animate__fadeInLeft">
         <h2 className="text-3xl font-bold">Technical Skills</h2>
         <div className="flex flex-wrap justify-center py-4">
           {/* List your technical skills here */}
@@ -31,7 +31,7 @@ const Skills = () => {
           <span className="m-2 badge badge-secondary bg-indigo-500 text-white p-4 rounded-full">
             MongoDB
           </span>
-        
+
           <span className="m-2 badge badge-secondary bg-fuchsia-500 text-white p-4 rounded-full animate-bounce">
             C
           </span>
@@ -41,7 +41,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="text-center mt-10">
+      <div className="text-center mt-10 animate__animated animate__fadeInRight">
         <h2 className="text-3xl font-bold">Soft Skills</h2>
         <div className="flex flex-wrap justify-center py-4">
           {/* List your soft skills here */}
@@ -63,7 +63,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="text-center mt-10">
+      <div className="text-center mt-10 animate__animated animate__fadeInDownBig">
         <h2 className="text-3xl font-bold">Tools & Technologies</h2>
         <div className="flex flex-wrap justify-center py-4">
           {/* List your tools & technologies here */}

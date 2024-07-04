@@ -4,17 +4,17 @@ import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900">
-      <div className="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
-        <a href="#">
+      <div className="container flex flex-col items-center justify-between p-2 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
+        <a href="/">
           <img
-            className="w-auto h-7"
-            src="https://merakiui.com/images/full-logo.svg"
-            alt=""
+            className="w-16 h-16 rounded-full"
+            src="https://i.ibb.co/6BDDyvD/portfolio.png"
+            alt="Logo"
           />
         </a>
 
         <p className="text-sm text-gray-600 dark:text-gray-300">
-          © Copyright 2021. All Rights Reserved.
+          © Copyright 2024. All Rights Reserved.
         </p>
 
         <div className="flex -mx-2">
