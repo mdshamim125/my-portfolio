@@ -6,14 +6,13 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Projects = () => {
-  // Define your project data here (replace with actual data)
   const projects = [
     {
       title: "Contest Hub",
       imageUrl:
         "https://contest-hub-c5704.web.app/assets/contest-banner-BWRX07g_.jpg",
       description:
-        "Contest Hub is a secure web app for efficient contest management with encrypted authentication. It offers admin, creator, and user dashboards, enabling contest creation, detailed submission viewing, and easy winner declaration. Real-time updates via React Query, secure API calls, responsive design, and Helmet integration ensure a user-friendly experience across all devices.",
+        "Contest Hub is a secure web app for efficient contest management with encrypted authentication. It offers admin, creator, and user dashboards, enabling contest creation, detailed submission viewing, and easy winner declaration.",
       features: [
         "Secure login and registration with password encryption.",
         "Admin, creator, and user dashboards for comprehensive management.",
@@ -24,20 +23,16 @@ const Projects = () => {
       clientGithubUrl:
         "https://github.com/mdshamim125/Contest-Hub-Client?tab=readme-ov-file",
       serverGithubUrl: "https://github.com/mdshamim125/Contest-Hub-Server",
-      // adminCredentials: {
-      //   username: "admin@gmail.com",
-      //   password: "123qaz!Q",
-      // },
     },
     {
       title: "Arts&Crafts",
       imageUrl: "https://i.ibb.co/3vk1hKT/pexels-hamad-bajwa-249513-755858.jpg",
       description:
-        "Welcome to Arts&Crafts! Our MongoDB-powered platform features a diverse collection of crafts items with user-friendly registration and category management. Enjoy seamless access on desktops, tablets, and smartphones with a responsive design. Explore detailed categories and showcase your creations effortlessly at Arts&Crafts",
+        "Arts&Crafts is a MongoDB-powered platform featuring a diverse collection of craft items, with user-friendly registration and category management. It ensures a responsive design for seamless access across devices.",
       features: [
         "Comprehensive MongoDB database for craft items.",
-        "User-friendly interface for registering, logging in, and managing crafts categories.",
-        "Responsive design for seamless access from any device.",
+        "User-friendly interface for managing crafts categories.",
+        "Responsive design for all devices.",
       ],
       technologies: "React, Firebase, React Router, SweetAlert2, MongoDB",
       liveUrl: "https://add-and-craft.web.app",
@@ -50,15 +45,14 @@ const Projects = () => {
       imageUrl:
         "https://i.ibb.co/jbzSfwD/mike-swigunski-Fz0-XVa-r-LQI-unsplash.jpg",
       description:
-        "TRAVELERS is a MongoDB-powered platform for managing diverse blogs and wishlists. It offers seamless registration, a user-friendly interface, and responsive design across devices. Users can create and manage personal blogs, subscribe for updates, and explore travel content effortlessly.",
+        "TRAVELERS is a MongoDB-powered platform for managing diverse blogs and wishlists, offering seamless registration, a responsive design, and subscription options for travel updates.",
       features: [
         "Comprehensive MongoDB database for blog management.",
-        "User-friendly interface for registering, logging in, and managing personal blog entries.",
-        "Responsive design for seamless access from any device.",
-        "Subscription for latest updates on travel destinations.",
+        "User-friendly interface for managing personal blog entries.",
+        "Subscription for latest travel destination updates.",
       ],
       technologies:
-        "React, Firebase, React Router, SweetAlert2, MongoDB, Axios, React Data Table Component, React Hot Toast, React Spinners, React Table",
+        "React, Firebase, React Router, SweetAlert2, MongoDB, Axios, React Data Table Component, React Hot Toast, React Table",
       liveUrl: "https://travel-blog-cf01e.web.app",
       clientGithubUrl:
         "https://github.com/mdshamim125/Travellers-Client?tab=readme-ov-file",
@@ -67,15 +61,17 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-black py-10" id="projects">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-white mb-8">Projects</h2>
+    <section className="bg-gray-900 py-16" id="projects">
+      <div className="container mx-auto px-6 md:px-10">
+        <h2 className="text-4xl font-bold text-center text-white mb-12">
+          My Projects
+        </h2>
 
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -87,80 +83,55 @@ const Projects = () => {
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white p-6 rounded-lg shadow-lg mb-6 flex flex-col md:flex-row">
+              <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
                 <img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-[350px] md:h-[500px] md:w-[40%] rounded-lg mb-4 md:mb-0 md:mr-4"
+                  className="w-full md:w-[40%] h-[250px] md:h-auto object-cover rounded-lg shadow-lg mb-6 md:mb-0 md:mr-6"
                 />
-                <div className="flex flex-col justify-between">
+                <div className="flex flex-col justify-between w-full md:w-[60%]">
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                    <p className="text-gray-700 mb-4">{project.description}</p>
-                    <h4 className="text-xl font-semibold mb-2">
-                      Core Features
-                    </h4>
-                    <ul className="list-disc list-inside text-gray-700 mb-4">
+                    <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                      {project.title}
+                    </h3>
+                    <p className="text-gray-600 mb-6">{project.description}</p>
+                    <h4 className="text-lg font-semibold mb-3">Core Features:</h4>
+                    <ul className="list-disc list-inside text-gray-600 mb-6">
                       {project.features.map((feature, idx) => (
                         <li key={idx}>{feature}</li>
                       ))}
                     </ul>
-                    <h4 className="text-xl font-semibold mb-2">
-                      Technologies Used
+                    <h4 className="text-lg font-semibold mb-2">
+                      Technologies Used:
                     </h4>
-                    <p className="text-gray-700 mb-4">{project.technologies}</p>
+                    <p className="text-gray-600 mb-6">{project.technologies}</p>
                   </div>
-                  <div>
-                    <h4 className="text-xl font-semibold mb-2">
-                      Project Links
-                    </h4>
-                    <ul className="flex space-x-4 mb-4">
-                      <li>
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href={project.liveUrl}
-                          className="text-blue-500 hover:underline"
-                        >
-                          Live Site
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href={project.clientGithubUrl}
-                          className="text-blue-500 hover:underline"
-                        >
-                          GitHub - Client
-                        </a>
-                      </li>
-                      {project.serverGithubUrl && (
-                        <li>
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={project.serverGithubUrl}
-                            className="text-blue-500 hover:underline"
-                          >
-                            GitHub - Server
-                          </a>
-                        </li>
-                      )}
-                    </ul>
-                    {project.adminCredentials && (
-                      <div>
-                        <h4 className="text-xl font-semibold mb-2">
-                          Admin Credentials
-                        </h4>
-                        <p className="text-gray-700 text-sm">
-                          <strong>Username:</strong>{" "}
-                          {project.adminCredentials.username}
-                          <br />
-                          <strong>Password:</strong>{" "}
-                          {project.adminCredentials.password}
-                        </p>
-                      </div>
+                  <div className="flex space-x-6 mt-6">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-500 transition-all"
+                    >
+                      Live Site
+                    </a>
+                    <a
+                      href={project.clientGithubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-700 transition-all"
+                    >
+                      GitHub (Client)
+                    </a>
+                    {project.serverGithubUrl && (
+                      <a
+                        href={project.serverGithubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-700 transition-all"
+                      >
+                        GitHub (Server)
+                      </a>
                     )}
                   </div>
                 </div>
