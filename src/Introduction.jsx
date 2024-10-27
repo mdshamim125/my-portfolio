@@ -1,7 +1,6 @@
 import "animate.css";
 import { Typewriter } from "react-simple-typewriter";
 
-import React from "react";
 
 const Introduction = () => {
   return (
@@ -51,7 +50,7 @@ const Introduction = () => {
             </p>
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/15raKWUn9WSoSR31kYJIlgGrNKuy_5d2y/view"
+              href="https://drive.google.com/file/d/1stVnnZfFJgiBw9YVKLoMyOBRruGTDyP_/view?usp=sharing"
               className="btn btn-primary  md:mt-4 md:px-6 md:py-3 rounded-lg text-white font-semibold bg-blue-500 hover:bg-blue-600"
             >
               Download Resume
