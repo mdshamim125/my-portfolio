@@ -1,9 +1,8 @@
-import React from "react";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-900">
+    <footer className="bg-gray-950">
       <div className="container flex flex-col items-center justify-between p-2 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
         <a href="/">
           <img
@@ -13,15 +12,15 @@ const Footer = () => {
           />
         </a>
 
-        <p className="text-sm text-gray-600 dark:text-gray-300">
+        <p className="text-sm text-white dark:text-gray-300">
           © Copyright 2024. All Rights Reserved.
         </p>
 
-        <div className="flex -mx-2">
+        <div className="flex text-white -mx-2">
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+            className="mx-1.5 dark:hover:text-blue-400  transition-colors duration-300 transform hover:text-blue-500"
             href="https://github.com/mdshamim125"
           >
             <FaGithub className="w-6 h-6" />
@@ -30,7 +29,7 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+            className="mx-1.5 dark:hover:text-blue-400  transition-colors duration-300 transform hover:text-blue-500"
             href="https://www.linkedin.com/in/md-shamim125"
           >
             <FaLinkedin className="w-6 h-6" />
@@ -39,7 +38,7 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+            className="mx-1.5 dark:hover:text-blue-400  transition-colors duration-300 transform hover:text-blue-500"
             href="https://www.facebook.com/profile.php?id=100028692487641&locale=fr_FR"
           >
             <FaFacebook className="w-6 h-6" />

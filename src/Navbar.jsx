@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative  bg-black">
+    <nav className="relative bg-gray-900">
       <div className="container px-6 py-3 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <a href="/">
@@ -68,7 +68,7 @@ const Navbar = () => {
             isOpen ? "block" : "hidden"
           } lg:flex lg:items-center lg:w-auto`}
         >
-          <div className="flex flex-col md:flex-row md:mx-6">
+          <div className="flex text-xl font-semibold flex-col md:flex-row md:mx-6">
             <a
               className="my-2 text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
               href="#skills"

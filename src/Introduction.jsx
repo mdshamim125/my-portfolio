@@ -1,4 +1,5 @@
 import "animate.css";
+import { FaDownload } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 
 const Introduction = () => {
@@ -12,6 +13,9 @@ const Introduction = () => {
           "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.ibb.co/dbk5Mkc/IMG-4537.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundAttachment: "fixed", // Parallax effect
+        backgroundRepeat: "no-repeat", // Ensure the background does not repeat
+        backgroundOrigin: "padding-box", // Controls the origin of the background
       }}
     >
       <div className="container mx-auto px-4">
@@ -22,8 +26,8 @@ const Introduction = () => {
               loop={0} // Once the sentence is typed, it stops.
               cursor
               cursorStyle="_"
-              typeSpeed={70}
-              deleteSpeed={50}
+              typeSpeed={200}
+              deleteSpeed={200}
               delaySpeed={1000}
             />
           </h1>
@@ -43,18 +47,20 @@ const Introduction = () => {
             />
           </h2>
           <p className="text-sm md:text-lg text-white leading-relaxed text-left">
-            I have expertise in HTML, CSS, JavaScript, React, Express.js, and
-            MongoDB. I specialize in building responsive websites and aim to
-            become a professional MERN stack web developer.
+            I have expertise in HTML, CSS, JavaScript, React.js, Next.js,
+            Express.js, and MongoDB. I specialize in building responsive
+            websites and aim to become a professional MERN stack web developer.
           </p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://drive.google.com/file/d/1ew48nTQJyOLysSBLtP0vv58EzHY9mpdU/view?usp=sharing"
-            className="mt-6 inline-block px-6 md:px-10 py-2 md:py-3 text-xs md:text-base font-semibold text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-full shadow-lg hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 hover:scale-105 transition-all duration-300 ease-in-out"
-          >
-            Download Resume
-          </a>
+          <div className="flex gap-2 items-center">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1ew48nTQJyOLysSBLtP0vv58EzHY9mpdU/view?usp=sharing"
+              className="mt-6  px-6 py-2 md:py-3 text-xs md:text-base font-semibold text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-lg shadow-lg hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 hover:scale-105 transition-all duration-300 ease-in-out flex items-center gap-2"
+            >
+              <FaDownload /> Download Resume
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -63,14 +69,8 @@ const Introduction = () => {
 
 export default Introduction;
 
-
-
-
-
-
 // import "animate.css";
 // import { Typewriter } from "react-simple-typewriter";
-
 
 // const Introduction = () => {
 //   return (

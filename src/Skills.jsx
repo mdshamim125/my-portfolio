@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -7,7 +6,8 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaGithub,
-  FaJava,
+  // FaJava,
+  FaPython,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -43,15 +43,15 @@ const technicalSkills = [
   { skill: "Express.js", icon: <SiExpress className="text-black text-4xl" /> },
   { skill: "MongoDB", icon: <SiMongodb className="text-green-500 text-4xl" /> },
   { skill: "C", icon: <SiC className="text-blue-700 text-4xl" /> },
-  { skill: "Java", icon: <FaJava className="text-red-600 text-4xl" /> },
+  { skill: "Python", icon: <FaPython className="text-red-600 text-4xl" /> },
 ];
 
-const softSkills = [
-  "Communication",
-  "Teamwork",
-  "Problem Solving",
-  "Time Management",
-];
+// const softSkills = [
+//   "Communication",
+//   "Teamwork",
+//   "Problem Solving",
+//   "Time Management",
+// ];
 
 const toolsAndTechnologies = [
   {
