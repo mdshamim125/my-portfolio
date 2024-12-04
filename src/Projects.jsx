@@ -8,6 +8,23 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 const Projects = () => {
   const projects = [
     {
+      title: "JobSphere",
+      imageUrl: "https://i.ibb.co.com/qDNThr3/pexels-fauxels-3184613.jpg", // Replace with your JobSphere image URL
+      description:
+        "JobSphere is a platform that connects job seekers with recruiters. It allows users to apply for jobs, manage their resumes, and receive notifications for new opportunities. Recruiters can post jobs, view applications, and communicate with candidates.",
+      features: [
+        "Support System: Integrated support system for user inquiries and assistance.",
+        "Communication: Nodemailer integration for interview invitations and communication.",
+        "Job & User Management: Job searching, filtering, status tracking, NextAuth and private routing.",
+        "Admin Dashboard: Admin dashboard for statistics, user management and job management.",
+      ],
+      technologies:
+        "Next.js, Tailwind CSS,, Recharts, Express.js, MongoDB, bcrypt, Nodemailer, react-share",
+      liveUrl: "https://job-sphere-rouge.vercel.app", // Replace with your live JobSphere URL
+      clientGithubUrl: "https://github.com/HunterMahmud/JobSphere/tree/main", // Replace with the actual client repo URL
+      serverGithubUrl: "https://github.com/HunterMahmud/JobSphere/tree/main", // Replace with the actual server repo URL
+    },
+    {
       title: "Contest Hub",
       imageUrl:
         "https://contest-hub-c5704.web.app/assets/contest-banner-BWRX07g_.jpg",
@@ -146,10 +163,6 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-
-
 
 // import React from "react";
 // import { Swiper, SwiperSlide } from "swiper/react";
