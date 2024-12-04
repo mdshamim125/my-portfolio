@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="relative bg-gray-900">
-      <div className="container px-6 py-3 mx-auto md:flex md:justify-between md:items-center">
+      <div className="container px-6 py-2 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <a href="/">
             <img

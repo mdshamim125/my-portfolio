@@ -35,6 +35,8 @@ const Introduction = () => {
             <Typewriter
               words={[
                 "Frontend Web Developer",
+                "Backend Developer",
+                "MERN Stack Developer",
                 "React Developer",
                 "Web Enthusiast",
               ]}
@@ -47,9 +49,10 @@ const Introduction = () => {
             />
           </h2>
           <p className="text-sm md:text-lg text-white leading-relaxed text-left">
-            I have expertise in HTML, CSS, JavaScript, React.js, Next.js,
-            Express.js, and MongoDB. I specialize in building responsive
-            websites and aim to become a professional MERN stack web developer.
+            I have expertise in HTML, CSS, JavaScript, TypeScript React.js,
+            Next.js, Express.js, and MongoDB. I specialize in building
+            responsive websites and aim to become a professional MERN stack web
+            developer.
           </p>
           <div className="flex gap-2 items-center">
             <a

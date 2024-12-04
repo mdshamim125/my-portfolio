@@ -1,6 +1,13 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+} from "react-icons/fa";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -12,20 +19,21 @@ const Contact = () => {
     e.preventDefault(); // Prevent default form submission
     emailjs
       .send(
-        "service_8nx1hy3", // Replace with your EmailJS service ID
-        "template_bqg4mkj", // Replace with your EmailJS template ID
+        "service_8nx1hy3", // Your EmailJS service ID
+        "template_bqg4mkj", // Your EmailJS template ID
         {
-          from_name: name,
-          from_email: email,
-          message: message,
+          from_name: name, // Maps to {{from_name}}
+          from_email: email, // Maps to {{from_email}}
+          reply_to: email, // Maps to {{reply_to}}
+          message: message, // Maps to {{message}}
         },
-        "uv0dNGe2x2tgQzEx8" // Replace with your EmailJS public user ID
+        "uv0dNGe2x2tgQzEx8" // Your EmailJS public user ID
       )
       .then((result) => {
         toast.success("Email sent successfully!");
         console.log("Email sent:", result.text);
-        setName(""); 
-        setEmail(""); 
+        setName("");
+        setEmail("");
         setMessage("");
       })
       .catch((error) => {
@@ -105,7 +113,7 @@ const Contact = () => {
               src="https://i.ibb.co/RPbKHWp/IMG-4539.jpg"
               alt="Profile"
             />
-            <div className="mt-6 space-y-8 md:mt-8">
+            {/* <div className="mt-6 space-y-8 md:mt-8">
               <p className="flex items-start -mx-2">
                 <span className="mx-2 text-white truncate w-72 dark:text-gray-400">
                   Rangpur, Bangladesh
@@ -118,6 +126,26 @@ const Contact = () => {
               </p>
               <p className="flex items-start -mx-2">
                 <span className="mx-2 text-white truncate w-72 dark:text-gray-400">
+                  cse12005038brur@gmail.com
+                </span>
+              </p>
+            </div> */}
+            <div className="mt-6 space-y-8 md:mt-8">
+              <p className="flex items-center -mx-2">
+                <FaMapMarkerAlt className="text-white dark:text-gray-400 mx-2" />
+                <span className="text-white truncate w-72 dark:text-gray-400">
+                  Rangpur, Bangladesh
+                </span>
+              </p>
+              <p className="flex items-center -mx-2">
+                <FaPhoneAlt className="text-white dark:text-gray-400 mx-2" />
+                <span className="text-white truncate w-72 dark:text-gray-400">
+                  +8801710534833
+                </span>
+              </p>
+              <p className="flex items-center -mx-2">
+                <FaEnvelope className="text-white dark:text-gray-400 mx-2" />
+                <span className="text-white truncate w-72 dark:text-gray-400">
                   cse12005038brur@gmail.com
                 </span>
               </p>
