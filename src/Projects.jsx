@@ -24,22 +24,22 @@ const Projects = () => {
         "https://github.com/mdshamim125/Contest-Hub-Client?tab=readme-ov-file",
       serverGithubUrl: "https://github.com/mdshamim125/Contest-Hub-Server",
     },
-    {
-      title: "Arts&Crafts",
-      imageUrl: "https://i.ibb.co/3vk1hKT/pexels-hamad-bajwa-249513-755858.jpg",
-      description:
-        "Arts&Crafts is a MongoDB-powered platform featuring a diverse collection of craft items, with user-friendly registration and category management. It ensures a responsive design for seamless access across devices.",
-      features: [
-        "Comprehensive MongoDB database for craft items.",
-        "User-friendly interface for managing crafts categories.",
-        "Responsive design for all devices.",
-      ],
-      technologies: "React, Firebase, React Router, SweetAlert2, MongoDB",
-      liveUrl: "https://add-and-craft.web.app",
-      clientGithubUrl:
-        "https://github.com/mdshamim125/Arts-Crafts-Client?tab=readme-ov-file",
-      serverGithubUrl: "https://github.com/mdshamim125/Arts-Crafts-Server",
-    },
+    // {
+    //   title: "Arts&Crafts",
+    //   imageUrl: "https://i.ibb.co/3vk1hKT/pexels-hamad-bajwa-249513-755858.jpg",
+    //   description:
+    //     "Arts&Crafts is a MongoDB-powered platform featuring a diverse collection of craft items, with user-friendly registration and category management. It ensures a responsive design for seamless access across devices.",
+    //   features: [
+    //     "Comprehensive MongoDB database for craft items.",
+    //     "User-friendly interface for managing crafts categories.",
+    //     "Responsive design for all devices.",
+    //   ],
+    //   technologies: "React, Firebase, React Router, SweetAlert2, MongoDB",
+    //   liveUrl: "https://add-and-craft.web.app",
+    //   clientGithubUrl:
+    //     "https://github.com/mdshamim125/Arts-Crafts-Client?tab=readme-ov-file",
+    //   serverGithubUrl: "https://github.com/mdshamim125/Arts-Crafts-Server",
+    // },
     {
       title: "TRAVELERS",
       imageUrl:
