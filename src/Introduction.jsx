@@ -38,7 +38,6 @@ const Introduction = () => {
                 "Backend Developer",
                 "MERN Stack Developer",
                 "React Developer",
-                "Web Enthusiast",
               ]}
               loop={0} // 0 means infinite loop
               cursor
@@ -49,7 +48,7 @@ const Introduction = () => {
             />
           </h2>
           <p className="text-sm md:text-lg text-white leading-relaxed text-left">
-            I have expertise in HTML, CSS, JavaScript, TypeScript React.js,
+            I have expertise in HTML, CSS, JavaScript, TypeScript, React.js,
             Next.js, Express.js, and MongoDB. I specialize in building
             responsive websites and aim to become a professional MERN stack web
             developer.
