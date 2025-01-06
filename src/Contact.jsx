@@ -9,11 +9,17 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import emailjs from "emailjs-com";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out" });
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault(); // Prevent default form submission
@@ -46,7 +52,7 @@ const Contact = () => {
     <section id="contact" className="min-h-screen bg-gray-900 dark:bg-gray-900">
       <div className="container px-6 py-10 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-10">
-          <div className="lg:w-1/2 lg:mx-10">
+          <div className="lg:w-1/2 lg:mx-10" data-aos="zoom-in-right">
             <h1 className="text-2xl font-semibold text-white capitalize dark:text-white lg:text-3xl">
               Let’s talk
             </h1>
@@ -107,7 +113,10 @@ const Contact = () => {
             </form>
           </div>
 
-          <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
+          <div
+            className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10"
+            data-aos="zoom-in-left"
+          >
             <img
               className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96"
               src="https://i.ibb.co/RPbKHWp/IMG-4539.jpg"

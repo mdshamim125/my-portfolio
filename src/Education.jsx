@@ -1,10 +1,21 @@
-import { FaGraduationCap, FaUniversity, FaCalendarAlt } from "react-icons/fa";
+import { FaGraduationCap, FaUniversity } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Education = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      easing:"ease-in-out",
+    });
+  });
+
   return (
     <section id="education" className="bg-white dark:bg-gray-900 py-14">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="zoom-in">
           <h1 className="text-3xl font-bold text-gray-800 dark:text-white capitalize">
             Education
           </h1>
@@ -15,7 +26,10 @@ const Education = () => {
         </div>
 
         {/* Education Cards Container */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          data-aos="fade-up"
+        >
           {/* SSC Card */}
           <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden p-6">
             <div className="flex items-center justify-between">

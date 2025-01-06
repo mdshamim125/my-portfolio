@@ -4,8 +4,8 @@ import {
   FaJs,
   FaReact,
   FaNodeJs,
-  FaGitAlt,
-  FaGithub,
+  // FaGitAlt,
+  // FaGithub,
   // FaJava,
   FaPython,
 } from "react-icons/fa";
@@ -16,11 +16,14 @@ import {
   SiExpress,
   SiMongodb,
   SiC,
-  SiVisualstudiocode,
-  SiFirebase,
-  SiNetlify,
-  SiVercel,
+  // SiVisualstudiocode,
+  // SiFirebase,
+  // SiNetlify,
+  // SiVercel,
 } from "react-icons/si";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const technicalSkills = [
   { skill: "HTML", icon: <FaHtml5 className="text-orange-600 text-4xl" /> },
@@ -53,34 +56,39 @@ const technicalSkills = [
 //   "Time Management",
 // ];
 
-const toolsAndTechnologies = [
-  {
-    tool: "Visual Studio Code",
-    icon: <SiVisualstudiocode className="text-blue-600 text-4xl" />,
-  },
-  { tool: "Git", icon: <FaGitAlt className="text-orange-500 text-4xl" /> },
-  { tool: "GitHub", icon: <FaGithub className="text-black text-4xl" /> },
-  {
-    tool: "Firebase",
-    icon: <SiFirebase className="text-yellow-500 text-4xl" />,
-  },
-  { tool: "Netlify", icon: <SiNetlify className="text-blue-500 text-4xl" /> },
-  { tool: "Vercel", icon: <SiVercel className="text-black text-4xl" /> },
-];
+// const toolsAndTechnologies = [
+//   {
+//     tool: "Visual Studio Code",
+//     icon: <SiVisualstudiocode className="text-blue-600 text-4xl" />,
+//   },
+//   { tool: "Git", icon: <FaGitAlt className="text-orange-500 text-4xl" /> },
+//   { tool: "GitHub", icon: <FaGithub className="text-black text-4xl" /> },
+//   {
+//     tool: "Firebase",
+//     icon: <SiFirebase className="text-yellow-500 text-4xl" />,
+//   },
+//   { tool: "Netlify", icon: <SiNetlify className="text-blue-500 text-4xl" /> },
+//   { tool: "Vercel", icon: <SiVercel className="text-black text-4xl" /> },
+// ];
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out" });
+  }, []);
+
   return (
     <section id="skills" className="py-16 bg-gray-100">
       <div className="container mx-auto px-6 md:px-12">
         {/* Technical Skills Section */}
         <div className="mb-16">
-          <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
+          <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8" data-aos="fade-right">
             Technical Skills
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {technicalSkills.map((skill, index) => (
               <div
                 key={index}
+                data-aos="fade-up"
                 className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center transform transition-transform hover:scale-105"
               >
                 {skill.icon}
@@ -110,12 +118,12 @@ const Skills = () => {
         </div> */}
 
         {/* Tools & Technologies Section */}
-        <div>
+        {/* <div>
           <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
             Tools & Technologies
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {toolsAndTechnologies.map((tool, index) => (
+            {toolsAndTechnologies?.map((tool, index) => (
               <div
                 key={index}
                 className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center transform transition-transform hover:scale-105"
@@ -127,7 +135,7 @@ const Skills = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

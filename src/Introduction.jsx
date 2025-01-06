@@ -1,29 +1,72 @@
 import "animate.css";
 import { FaDownload } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+// import { useCallback, useState } from "react";
+// import Particles, { initParticlesEngine } from "@tsparticles/react";
+// // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
+// // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+// import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+// // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 const Introduction = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      offset: 100, // Offset from the viewport
+      easing: "ease-in-out", // Easing function
+      once: true, // Animation runs only once
+    });
+  }, []);
+
+  // const [ init, setInit ] = useState(false);
+
+  // this should be run only once per application lifetime
+  // useEffect(() => {
+  //     initParticlesEngine(async (engine) => {
+  //         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+  //         // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+  //         // starting from v2 you can add only the features you need reducing the bundle size
+  //         //await loadAll(engine);
+  //         //await loadFull(engine);
+  //         await loadSlim(engine);
+  //         //await loadBasic(engine);
+  //     }).then(() => {
+  //         setInit(true);
+  //     });
+  // }, []);
+
+  // const particlesLoaded = (container) => {
+  //     console.log(container);
+  // };
+
   return (
     <div
       id="intro"
       className="hero flex items-center justify-center bg-base-200"
       style={{
-        minHeight: "calc(100vh - 80px)", // Subtracts 60px navbar height from the full viewport height
+        minHeight: "calc(100vh - 80px)",
         backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.ibb.co/dbk5Mkc/IMG-4537.jpg')",
+          "linear-gradient(rgba(17,24,39, 0.7), rgba(17,24,39, 0.7)), url('https://i.ibb.co/dbk5Mkc/IMG-4537.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed", // Parallax effect
-        backgroundRepeat: "no-repeat", // Ensure the background does not repeat
-        backgroundOrigin: "padding-box", // Controls the origin of the background
+        backgroundAttachment: "fixed",
+        backgroundRepeat: "no-repeat",
+        backgroundOrigin: "padding-box",
       }}
     >
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl animate__animated animate__fadeInLeft">
+      <div
+        className="container mx-auto px-4"
+        data-aos="fade-up"
+        data-aos-duration="1500" // Override default duration
+      >
+        <div className="max-w-3xl" data-aos="zoom-in" data-aos-delay="300">
           <h1 className="text-3xl md:text-5xl font-bold text-white text-left">
             <Typewriter
               words={["Hello, I'm Md Shamim"]}
-              loop={0} // Once the sentence is typed, it stops.
+              loop={0}
               cursor
               cursorStyle="_"
               typeSpeed={200}
@@ -31,7 +74,11 @@ const Introduction = () => {
               delaySpeed={1000}
             />
           </h1>
-          <h2 className="text-xl md:text-2xl text-white my-4 text-left">
+          <h2
+            className="text-xl md:text-2xl text-white my-4 text-left"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
             <Typewriter
               words={[
                 "Frontend Web Developer",
@@ -39,7 +86,7 @@ const Introduction = () => {
                 "MERN Stack Developer",
                 "React Developer",
               ]}
-              loop={0} // 0 means infinite loop
+              loop={0}
               cursor
               cursorStyle="_"
               typeSpeed={70}
@@ -47,13 +94,21 @@ const Introduction = () => {
               delaySpeed={1000}
             />
           </h2>
-          <p className="text-sm md:text-lg text-white leading-relaxed text-left">
+          <p
+            className="text-sm md:text-lg text-white leading-relaxed text-left"
+            data-aos="fade-left"
+            data-aos-delay="700"
+          >
             I have expertise in HTML, CSS, JavaScript, TypeScript, React.js,
             Next.js, Express.js, and MongoDB. I specialize in building
             responsive websites and aim to become a professional MERN stack web
             developer.
           </p>
-          <div className="flex gap-2 items-center">
+          <div
+            className="flex gap-2 items-center"
+            data-aos="flip-up"
+            data-aos-delay="900"
+          >
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -70,6 +125,106 @@ const Introduction = () => {
 };
 
 export default Introduction;
+
+// import "animate.css";
+// import { FaDownload } from "react-icons/fa";
+// import { Typewriter } from "react-simple-typewriter";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
+
+// const Introduction = () => {
+//   useEffect(() => {
+//     AOS.init({
+//       duration: 1000, // Animation duration in milliseconds
+//       offset: 100, // Offset from the viewport
+//       easing: "ease-in-out", // Easing function
+//       once: true, // Animation runs only once
+//     });
+//   }, []);
+//   return (
+//     <div
+//       id="intro"
+//       className="hero flex items-center justify-center bg-base-200"
+//       style={{
+//         minHeight: "calc(100vh - 80px)",
+//         backgroundImage:
+//           "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.ibb.co/dbk5Mkc/IMG-4537.jpg')",
+//         backgroundSize: "cover",
+//         backgroundPosition: "center",
+//         backgroundAttachment: "fixed",
+//         backgroundRepeat: "no-repeat",
+//         backgroundOrigin: "padding-box",
+//       }}
+//     >
+//       <div
+//         className="container mx-auto px-4"
+//         data-aos="fade-up"
+//         data-aos-duration="1500" // Override default duration
+//       >
+//         <div className="max-w-3xl" data-aos="zoom-in" data-aos-delay="300">
+//           <h1 className="text-3xl md:text-5xl font-bold text-white text-left">
+//             <Typewriter
+//               words={["Hello, I'm Md Shamim"]}
+//               loop={0}
+//               cursor
+//               cursorStyle="_"
+//               typeSpeed={200}
+//               deleteSpeed={200}
+//               delaySpeed={1000}
+//             />
+//           </h1>
+//           <h2
+//             className="text-xl md:text-2xl text-white my-4 text-left"
+//             data-aos="fade-right"
+//             data-aos-delay="500"
+//           >
+//             <Typewriter
+//               words={[
+//                 "Frontend Web Developer",
+//                 "Backend Developer",
+//                 "MERN Stack Developer",
+//                 "React Developer",
+//               ]}
+//               loop={0}
+//               cursor
+//               cursorStyle="_"
+//               typeSpeed={70}
+//               deleteSpeed={50}
+//               delaySpeed={1000}
+//             />
+//           </h2>
+//           <p
+//             className="text-sm md:text-lg text-white leading-relaxed text-left"
+//             data-aos="fade-left"
+//             data-aos-delay="700"
+//           >
+//             I have expertise in HTML, CSS, JavaScript, TypeScript, React.js,
+//             Next.js, Express.js, and MongoDB. I specialize in building
+//             responsive websites and aim to become a professional MERN stack web
+//             developer.
+//           </p>
+//           <div
+//             className="flex gap-2 items-center"
+//             data-aos="flip-up"
+//             data-aos-delay="900"
+//           >
+//             <a
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               href="https://drive.google.com/file/d/1zVjQPJZYl_M6fSVQT8qFlpvUvOBJxDWm/view"
+//               className="mt-6  px-6 py-2 md:py-3 text-xs md:text-base font-semibold text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-lg shadow-lg hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 hover:scale-105 transition-all duration-300 ease-in-out flex items-center gap-2"
+//             >
+//               <FaDownload /> Download Resume
+//             </a>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Introduction;
 
 // import "animate.css";
 // import { Typewriter } from "react-simple-typewriter";

@@ -4,11 +4,18 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out" });
+  }, []);
+
   const projects = [
     {
-      title: "JobSphere",
+      title: "JobSphere (Team-Project)",
       imageUrl: "https://i.ibb.co.com/qDNThr3/pexels-fauxels-3184613.jpg", // Replace with your JobSphere image URL
       description:
         "JobSphere is a platform that connects job seekers with recruiters. It allows users to apply for jobs, manage their resumes, and receive notifications for new opportunities. Recruiters can post jobs, view applications, and communicate with candidates.",
@@ -78,7 +85,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-gray-900 py-16" id="projects">
+    <section className="bg-gray-900 py-16" id="projects" data-aos="zoom-in-up">
       <div className="container mx-auto px-6 md:px-10">
         <h2 className="text-4xl font-bold text-center text-white mb-12">
           My Projects
