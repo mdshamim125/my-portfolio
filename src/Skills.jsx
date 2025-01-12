@@ -16,6 +16,10 @@ import {
   SiExpress,
   SiMongodb,
   SiMysql,
+  SiRedux,
+  SiMongoose,
+  SiC,
+  SiCplusplus,
   // SiVisualstudiocode,
   // SiFirebase,
   // SiNetlify,
@@ -38,6 +42,8 @@ const technicalSkills = [
     icon: <SiTypescript className="text-blue-500 text-4xl" />,
   },
   { skill: "React.js", icon: <FaReact className="text-blue-400 text-4xl" /> },
+  { skill: "Redux", icon: <SiRedux className="text-purple-600 text-4xl" /> },
+
   {
     skill: "Next.js",
     icon: <SiNextdotjs className="text-gray-900 text-4xl" />,
@@ -45,8 +51,13 @@ const technicalSkills = [
   { skill: "Node.js", icon: <FaNodeJs className="text-green-600 text-4xl" /> },
   { skill: "Express.js", icon: <SiExpress className="text-black text-4xl" /> },
   { skill: "MongoDB", icon: <SiMongodb className="text-green-500 text-4xl" /> },
+  {
+    skill: "Mongoose",
+    icon: <SiMongoose className="text-green-600 text-4xl" />,
+  },
   { skill: "MySQL", icon: <SiMysql className="text-blue-600 text-4xl" /> },
-  // { skill: "C", icon: <SiC className="text-blue-700 text-4xl" /> },
+  { skill: "C", icon: <SiC className="text-blue-700 text-4xl" /> },
+  { skill: "C++", icon: <SiCplusplus className="text-blue-600 text-4xl" /> },
   { skill: "Python", icon: <FaPython className="text-red-600 text-4xl" /> },
 ];
 
@@ -82,7 +93,10 @@ const Skills = () => {
       <div className="container mx-auto px-6 md:px-12">
         {/* Technical Skills Section */}
         <div className="mb-16">
-          <h2 className="text-4xl font-extrabold text-center text-gray-400 mb-8" data-aos="fade-right">
+          <h2
+            className="text-4xl font-extrabold text-center text-gray-400 mb-8"
+            data-aos="fade-right"
+          >
             My Technical Skills
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
