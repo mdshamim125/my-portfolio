@@ -13,13 +13,13 @@ const Education = () => {
   });
 
   return (
-    <section id="education" className="bg-white dark:bg-gray-900 py-14">
+    <section id="education" className="bg-gray-900 py-14">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12" data-aos="zoom-in">
-          <h1 className="text-3xl font-bold text-gray-800 dark:text-white capitalize">
+          <h1 className="text-4xl font-bold text-gray-400 dark:text-white capitalize">
             Education
           </h1>
-          <p className="mt-4 max-w-2xl mx-auto text-gray-500 dark:text-gray-400">
+          <p className="mt-4 max-w-2xl mx-auto text-gray-300 dark:text-gray-400">
             A snapshot of my academic journey that has shaped my technical
             skills and knowledge.
           </p>
@@ -31,7 +31,7 @@ const Education = () => {
           data-aos="fade-up"
         >
           {/* SSC Card */}
-          <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden p-6">
+          <div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden p-6">
             <div className="flex items-center justify-between">
               <FaGraduationCap className="text-4xl text-blue-600 dark:text-blue-400" />
               <span className="text-lg font-semibold text-gray-600 dark:text-gray-300">
@@ -54,7 +54,7 @@ const Education = () => {
           </div>
 
           {/* HSC Card */}
-          <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden p-6">
+          <div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden p-6">
             <div className="flex items-center justify-between">
               <FaGraduationCap className="text-4xl text-blue-600 dark:text-blue-400" />
               <span className="text-lg font-semibold text-gray-600 dark:text-gray-300">
@@ -77,7 +77,7 @@ const Education = () => {
           </div>
 
           {/* BSc in CSE Card */}
-          <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden p-6">
+          <div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden p-6">
             <div className="flex items-center justify-between">
               <FaGraduationCap className="text-4xl text-blue-600 dark:text-blue-400" />
               <span className="text-lg font-semibold text-gray-600 dark:text-gray-300">

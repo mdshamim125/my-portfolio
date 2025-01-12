@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative bg-gray-900">
+    <nav className="relative bg-gray-950">
       <div className="container px-6 py-2 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <a href="/">
@@ -24,7 +24,7 @@ const Navbar = () => {
             <button
               onClick={toggleMenu}
               type="button"
-              className="text-white dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+              className="text-gray-300 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
               aria-label="toggle menu"
             >
               {!isOpen ? (
@@ -70,25 +70,25 @@ const Navbar = () => {
         >
           <div className="flex text-xl font-semibold flex-col md:flex-row md:mx-6">
             <a
-              className="my-2 text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+              className="my-2 text-gray-300 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
               href="#skills"
             >
               Skills
             </a>
             <a
-              className="my-2 text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+              className="my-2 text-gray-300 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
               href="#projects"
             >
               Projects
             </a>
             <a
-              className="my-2 text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+              className="my-2 text-gray-300 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
               href="#education"
             >
               Education
             </a>
             <a
-              className="my-2 text-white transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+              className="my-2 text-gray-300 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
               href="#contact"
             >
               Contact

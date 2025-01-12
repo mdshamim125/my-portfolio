@@ -12,11 +12,11 @@ const Footer = () => {
           />
         </a>
 
-        <p className="text-sm text-white dark:text-gray-300">
+        <p className="text-sm text-gray-300 dark:text-gray-300">
           © Copyright 2024. All Rights Reserved.
         </p>
 
-        <div className="flex text-white -mx-2">
+        <div className="flex text-gray-300 -mx-2">
           <a
             target="_blank"
             rel="noopener noreferrer"

@@ -77,19 +77,19 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className="py-16 bg-gray-100">
+    <section id="skills" className="py-16 bg-gray-900">
       <div className="container mx-auto px-6 md:px-12">
         {/* Technical Skills Section */}
         <div className="mb-16">
-          <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8" data-aos="fade-right">
-            Technical Skills
+          <h2 className="text-4xl font-extrabold text-center text-gray-400 mb-8" data-aos="fade-right">
+            My Technical Skills
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {technicalSkills.map((skill, index) => (
               <div
                 key={index}
                 data-aos="fade-up"
-                className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center transform transition-transform hover:scale-105"
+                className="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center text-center transform transition-transform hover:scale-105"
               >
                 {skill.icon}
                 <span className="mt-4 text-lg font-medium text-gray-700">
