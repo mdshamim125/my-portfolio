@@ -15,7 +15,7 @@ import {
   SiNextdotjs,
   SiExpress,
   SiMongodb,
-  SiC,
+  SiMysql,
   // SiVisualstudiocode,
   // SiFirebase,
   // SiNetlify,
@@ -45,7 +45,8 @@ const technicalSkills = [
   { skill: "Node.js", icon: <FaNodeJs className="text-green-600 text-4xl" /> },
   { skill: "Express.js", icon: <SiExpress className="text-black text-4xl" /> },
   { skill: "MongoDB", icon: <SiMongodb className="text-green-500 text-4xl" /> },
-  { skill: "C", icon: <SiC className="text-blue-700 text-4xl" /> },
+  { skill: "MySQL", icon: <SiMysql className="text-blue-600 text-4xl" /> },
+  // { skill: "C", icon: <SiC className="text-blue-700 text-4xl" /> },
   { skill: "Python", icon: <FaPython className="text-red-600 text-4xl" /> },
 ];
 
