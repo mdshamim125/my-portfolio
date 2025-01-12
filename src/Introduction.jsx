@@ -81,7 +81,7 @@ const Introduction = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://docs.google.com/document/d/1Fkg9SAnxJjkn0kdfWSH76iwQrztF_IP7wQf4NpmEr5Q/edit?usp=sharing"
+                href="https://drive.google.com/file/d/1jIIiNBmAZvSmOPnSfg2JrhCjNKOw_To_/view?usp=sharing"
                 className="mt-6 px-6 py-2 md:py-3 text-xs md:text-base font-semibold text-gray-200 bg-gradient-to-r from-gray-400 via-gray-400 to-gray-600 rounded-lg shadow-lg hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 hover:scale-105 transition-all duration-300 ease-in-out flex items-center gap-2"
               >
                 <FaDownload /> Download Resume
