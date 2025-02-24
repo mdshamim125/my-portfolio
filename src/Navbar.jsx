@@ -1,14 +1,38 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
+  const [atTop, setAtTop] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      setAtTop(currentScrollY === 0);
+      setIsScrollingUp(currentScrollY < lastScrollY);
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <nav className="relative bg-gray-950">
+    <nav
+      className={`fixed mx-auto top-0 left-0 w-full py-2 z-50 transition-transform duration-300 ${
+        isScrollingUp ? "translate-y-0" : "-translate-y-full"
+      } ${
+        atTop
+          ? "bg-transparent"
+          : "bg-gray-950"
+      }`}
+    >
       <div className="container px-6 py-2 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <a href="/">

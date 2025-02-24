@@ -19,7 +19,7 @@ const Introduction = () => {
     <div>
       <div
         id="intro"
-        className="hero flex items-center justify-center bg-gray-900"
+        className="hero pt-32 flex items-center justify-center bg-gray-900"
         style={{
           minHeight: "calc(100vh - 80px)",
           backgroundOrigin: "padding-box",
