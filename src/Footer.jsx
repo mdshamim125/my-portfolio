@@ -1,48 +1,141 @@
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+// import { motion } from "framer-motion";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-gray-950">
-      <div className="container flex flex-col items-center justify-between p-2 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
-        <a href="/">
-          <img
-            className="w-16 h-16 rounded-full"
-            src="https://i.ibb.co/6BDDyvD/portfolio.png"
-            alt="Logo"
-          />
-        </a>
+    <footer className="bg-slate-900 border-t border-slate-800/50">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Column 1 - About */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="relative">
+                <img
+                  className="w-10 h-10 rounded-md shadow-lg border border-sky-500/30"
+                  src="https://i.ibb.co/6BDDyvD/portfolio.png"
+                  alt="Logo"
+                />
+                <div className="absolute -inset-0.5 rounded-md bg-gradient-to-r from-sky-400 to-indigo-500 opacity-30 blur-sm"></div>
+              </div>
+              <div>
+                <h3 className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-indigo-400">
+                  Md Shamim
+                </h3>
+                <p className="text-xs text-gray-400">Full Stack Developer</p>
+              </div>
+            </div>
+            <p className="text-gray-400 text-sm">
+              Passionate about creating modern, responsive web applications with
+              clean code and exceptional user experiences.
+            </p>
+          </div>
 
-        <p className="text-sm text-gray-300 dark:text-gray-300">
-          © Copyright 2024. All Rights Reserved.
-        </p>
+          {/* Column 2 - Links */}
+          <div className="space-y-4">
+            <h3 className="text-white font-medium mb-3">Quick Links</h3>
+            <div className="grid grid-cols-2 gap-2">
+              <a
+                href="#intro"
+                className="text-gray-400 hover:text-sky-400 transition-colors text-sm"
+              >
+                Home
+              </a>
+              <a
+                href="#skills"
+                className="text-gray-400 hover:text-sky-400 transition-colors text-sm"
+              >
+                Skills
+              </a>
+              <a
+                href="#projects"
+                className="text-gray-400 hover:text-sky-400 transition-colors text-sm"
+              >
+                Projects
+              </a>
+              <a
+                href="#education"
+                className="text-gray-400 hover:text-sky-400 transition-colors text-sm"
+              >
+                Education
+              </a>
+              <a
+                href="#contact"
+                className="text-gray-400 hover:text-sky-400 transition-colors text-sm"
+              >
+                Contact
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1jIIiNBmAZvSmOPnSfg2JrhCjNKOw_To_/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-sky-400 transition-colors text-sm"
+              >
+                Resume
+              </a>
+            </div>
+          </div>
 
-        <div className="flex text-gray-300 -mx-2">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mx-1.5 dark:hover:text-blue-400  transition-colors duration-300 transform hover:text-blue-500"
-            href="https://github.com/mdshamim125"
-          >
-            <FaGithub className="w-6 h-6" />
-          </a>
+          {/* Column 3 - Contact */}
+          <div className="space-y-4">
+            <h3 className="text-white font-medium mb-3">Get In Touch</h3>
+            <div className="space-y-3">
+              <div className="flex items-center gap-3">
+                <FaEnvelope className="text-sky-400" />
+                <a
+                  href="mailto:youremail@example.com"
+                  className="text-gray-400 hover:text-sky-400 transition-colors text-sm"
+                >
+                  youremail@example.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <FaMapMarkerAlt className="text-sky-400" />
+                <span className="text-gray-400 text-sm">Bangladesh</span>
+              </div>
+            </div>
 
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mx-1.5 dark:hover:text-blue-400  transition-colors duration-300 transform hover:text-blue-500"
-            href="https://www.linkedin.com/in/md-shamim125"
-          >
-            <FaLinkedin className="w-6 h-6" />
-          </a>
+            <div className="flex space-x-3 mt-6">
+              <a
+                href="https://github.com/mdshamim125"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800 p-2 rounded-lg text-gray-400 hover:text-white hover:-translate-y-1 transition-all"
+              >
+                <FaGithub size={18} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/md-shamim125"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800 p-2 rounded-lg text-gray-400 hover:text-blue-400 hover:-translate-y-1 transition-all"
+              >
+                <FaLinkedin size={18} />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100028692487641&locale=fr_FR"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800 p-2 rounded-lg text-gray-400 hover:text-blue-500 hover:-translate-y-1 transition-all"
+              >
+                <FaFacebook size={18} />
+              </a>
+            </div>
+          </div>
+        </div>
 
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mx-1.5 dark:hover:text-blue-400  transition-colors duration-300 transform hover:text-blue-500"
-            href="https://www.facebook.com/profile.php?id=100028692487641&locale=fr_FR"
-          >
-            <FaFacebook className="w-6 h-6" />
-          </a>
+        {/* Bottom Copyright */}
+        <div className="border-t border-slate-800/50 mt-10 pt-6 flex flex-col items-center justify-center text-center">
+          <p className="text-gray-500 text-sm">
+            © {currentYear} Md Shamim. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
