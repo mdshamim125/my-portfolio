@@ -45,7 +45,7 @@ const Introduction = () => {
               <div className="flex flex-col md:flex-row justify-between items-center md:items-center relative">
                 <div className="text-left w-full md:w-3/4">
                   <motion.p
-                    className="text-sky-400 font-medium mb-2"
+                    className="text-xl sm:text-2xl lg:text-3xl text-sky-400 font-medium mb-3"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3 }}
@@ -54,7 +54,7 @@ const Introduction = () => {
                   </motion.p>
 
                   <motion.h1
-                    className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4"
+                    className="text-6xl sm:text-7xl lg:text-8xl font-bold text-white mb-4"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.4 }}
