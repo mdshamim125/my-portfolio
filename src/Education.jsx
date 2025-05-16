@@ -14,7 +14,7 @@ const educationData = [
     degree: "BSc in Computer Science and Engineering",
     institution: "Begum Rokeya University, Rangpur",
     location: "Rangpur, Bangladesh",
-    duration: "2021 - Present",
+    duration: "2022 - Present",
     status: "Ongoing",
     description:
       "Focusing on core computer science principles, software engineering, and modern web development technologies.",

@@ -90,7 +90,7 @@ const Introduction = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8 }}
-                    className="flex flex-wrap gap-4 mt-6"
+                    className="flex flex-wrap gap-4 my-6"
                   >
                     <motion.a
                       href="#about"
@@ -162,7 +162,7 @@ const Introduction = () => {
           </div>
 
           {/* Mobile Scroll Indicator - Bottom Center */}
-          <motion.div
+          {/* <motion.div
             className="md:hidden absolute bottom-10 left-1/2 transform -translate-x-1/2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, y: [0, 10, 0] }}
@@ -195,7 +195,7 @@ const Introduction = () => {
                 />
               </svg>
             </a>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 
@@ -254,7 +254,7 @@ const Introduction = () => {
               className="space-y-6"
             >
               <h3 className="text-2xl font-bold text-white">
-                Full Stack Developer Based in Bangladesh
+                MERN Stack Developer
               </h3>
 
               <p className="text-gray-300 text-lg leading-relaxed">
@@ -287,7 +287,7 @@ const Introduction = () => {
                     <FaBriefcase className="text-sky-400" />
                   </div>
                   <div>
-                    <h4 className="text-white font-medium">3+ Projects</h4>
+                    <h4 className="text-white font-medium">5+ Projects</h4>
                     <p className="text-gray-400 text-sm">Completed</p>
                   </div>
                 </div>
