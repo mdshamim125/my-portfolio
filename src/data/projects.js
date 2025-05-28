@@ -3,7 +3,7 @@ export const projectsData = [
     id: 1,
     title: "JobSphere",
     shortDesc: "Job portal for seekers & recruiters with advanced features",
-    imageUrl: "https://i.ibb.co.com/qDNThr3/pexels-fauxels-3184613.jpg",
+    imageUrl: "https://i.ibb.co/DfTWNzZd/job-portal.png",
     description:
       "A comprehensive job portal connecting job seekers with recruiters, featuring advanced job search, application tracking, and communication tools.",
     features: [
@@ -27,7 +27,7 @@ export const projectsData = [
     id: 2,
     title: "Contest Hub",
     shortDesc: "Contest platform with multi-user dashboards",
-    imageUrl: "https://i.ibb.co.com/5X3Xhjqm/pexels-pixabay-163403.jpg",
+    imageUrl: "https://i.ibb.co/nZkm1Cb/Annotation-2025-05-28-181158.png",
     description:
       "A secure platform for contest management with dedicated dashboards for admins, creators, and participants.",
     features: [
@@ -46,7 +46,7 @@ export const projectsData = [
     title: "TRAVELERS",
     shortDesc: "Travel blog with personalized content & subscriptions",
     imageUrl:
-      "https://i.ibb.co/jbzSfwD/mike-swigunski-Fz0-XVa-r-LQI-unsplash.jpg",
+      "https://i.ibb.co/bR2hhtPM/traveller.png",
     description:
       "A modern travel blogging platform with personalized content and subscription features.",
     features: [
