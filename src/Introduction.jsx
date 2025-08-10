@@ -76,6 +76,7 @@ const Introduction = () => {
                         "Backend Developer",
                         "MERN Stack Developer",
                         "React Developer",
+                        "Full Stack Developer",
                       ]}
                       loop={0}
                       cursor
@@ -287,7 +288,7 @@ const Introduction = () => {
                     <FaBriefcase className="text-sky-400" />
                   </div>
                   <div>
-                    <h4 className="text-white font-medium">5+ Projects</h4>
+                    <h4 className="text-white font-medium">10+ Projects</h4>
                     <p className="text-gray-400 text-sm">Completed</p>
                   </div>
                 </div>

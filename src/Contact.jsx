@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import toast from "react-hot-toast";
+import fb_profile from "./assets/facebook_profile_2.jpg";
+
 import {
   FaEnvelope,
   FaFacebook,
@@ -10,7 +12,7 @@ import {
   FaPaperPlane,
   FaSpinner,
   FaServer,
-  FaUserTie,
+  // FaUserTie,
 } from "react-icons/fa";
 import emailjs from "emailjs-com";
 import AOS from "aos";
@@ -269,7 +271,8 @@ const Contact = () => {
             <div className="rounded-xl border border-gray-800 bg-gray-800/50 p-8 backdrop-blur-sm shadow-lg h-full flex flex-col transform transition-all duration-500 hover:shadow-blue-900/20">
               <div className="mb-8 border-b border-gray-700 pb-6">
                 <h3 className="text-2xl font-bold text-white mb-2 flex items-center">
-                  <FaUserTie className="mr-3 text-sky-400" />
+                  {/* <FaUserTie className="mr-3 text-sky-400" /> */}
+                  <img src={fb_profile} className="h-16 w-16 rounded-full mr-4" alt="fb_image" />
                   Md Shamim
                 </h3>
                 <p className="text-gray-300 flex items-center space-x-2 mt-2">
@@ -349,7 +352,7 @@ const Contact = () => {
                       <FaGithub size={20} />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/md-shamim-4b2b88210/"
+                      href="https://www.linkedin.com/in/md-shamim125"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-gray-700 p-3 rounded-lg text-gray-400 hover:text-blue-400 hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
@@ -358,7 +361,7 @@ const Contact = () => {
                       <FaLinkedin size={20} />
                     </a>
                     <a
-                      href="https://www.facebook.com/mdshamim125"
+                      href="https://www.facebook.com/md.shamim.421103"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-gray-700 p-3 rounded-lg text-gray-400 hover:text-blue-500 hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"

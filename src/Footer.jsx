@@ -98,7 +98,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <FaMapMarkerAlt className="text-sky-400" />
-                <span className="text-gray-400 text-sm">Bangladesh</span>
+                <span className="text-gray-400 text-sm">Rangpur, Bangladesh</span>
               </div>
             </div>
 
