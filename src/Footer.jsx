@@ -6,6 +6,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -54,12 +55,12 @@ const Footer = () => {
               >
                 Skills
               </a>
-              <a
-                href="#projects"
+              <Link
+                to="/projects"
                 className="text-gray-400 hover:text-sky-400 transition-colors text-sm"
               >
                 Projects
-              </a>
+              </Link>
               <a
                 href="#education"
                 className="text-gray-400 hover:text-sky-400 transition-colors text-sm"
@@ -98,7 +99,9 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <FaMapMarkerAlt className="text-sky-400" />
-                <span className="text-gray-400 text-sm">Rangpur, Bangladesh</span>
+                <span className="text-gray-400 text-sm">
+                  Rangpur, Bangladesh
+                </span>
               </div>
             </div>
 

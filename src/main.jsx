@@ -5,11 +5,28 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import AllProjects from "./AllProjects.jsx";
+import MainLayout from "./MainLayout";
+import ProjectDetails from "./ProjectDetails.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App></App>,
+    element: <MainLayout />,
+    children: [
+      {
+        path: "/",
+        element: <App />,
+      },
+      {
+        path: "/projects",
+        element: <AllProjects />,
+      },
+      {
+        path: "/projects/:id",
+        element: <ProjectDetails />,
+      },
+    ],
   },
 ]);
 

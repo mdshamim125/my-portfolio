@@ -255,19 +255,22 @@ const Introduction = () => {
               className="space-y-6"
             >
               <h3 className="text-2xl font-bold text-white">
-                MERN Stack Developer
+                Full-Stack Developer
               </h3>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                I build modern web applications using the MERN stack (MongoDB,
-                Express, React, Node.js), focusing on creating intuitive,
-                responsive interfaces and robust backend solutions.
+                I specialize in building modern web applications using the MERN
+                stack (MongoDB, Express, React, Node.js) along with TypeScript
+                for type-safe development. I focus on creating intuitive,
+                responsive interfaces and scalable backend solutions.
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                Passionate about clean code and optimized user experiences, I
-                collaborate with clients to deliver custom web solutions that
-                effectively address their business needs.
+                Experienced in state management with Redux Toolkit & RTK Query,
+                and comfortable working with relational databases like
+                PostgreSQL. I’m passionate about clean code, optimized user
+                experiences, and delivering solutions that truly meet client
+                needs.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
@@ -278,18 +281,19 @@ const Introduction = () => {
                   <div>
                     <h4 className="text-white font-medium">Web Development</h4>
                     <p className="text-gray-400 text-sm">
-                      Modern and responsive
+                      Modern & responsive apps
                     </p>
                   </div>
                 </div>
-
                 <div className="flex items-center gap-3">
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center">
                     <FaBriefcase className="text-sky-400" />
                   </div>
                   <div>
                     <h4 className="text-white font-medium">10+ Projects</h4>
-                    <p className="text-gray-400 text-sm">Completed</p>
+                    <p className="text-gray-400 text-sm">
+                      Delivered successfully
+                    </p>
                   </div>
                 </div>
 

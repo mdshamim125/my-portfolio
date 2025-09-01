@@ -34,23 +34,65 @@ const skillCategories = [
     skills: [
       { skill: "HTML", icon: <FaHtml5 className="text-orange-600 text-5xl" /> },
       { skill: "CSS", icon: <FaCss3Alt className="text-blue-600 text-5xl" /> },
-      { skill: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-500 text-5xl" /> },
-      { skill: "JavaScript", icon: <FaJs className="text-yellow-400 text-5xl" /> },
-      { skill: "TypeScript", icon: <SiTypescript className="text-blue-500 text-5xl" /> },
-      { skill: "React.js", icon: <FaReact className="text-blue-400 text-5xl" /> },
-      { skill: "Redux", icon: <SiRedux className="text-purple-600 text-5xl" /> },
-      { skill: "Next.js", icon: <SiNextdotjs className="text-white text-5xl" /> },
+      {
+        skill: "Tailwind CSS",
+        icon: <SiTailwindcss className="text-teal-500 text-5xl" />,
+      },
+      {
+        skill: "JavaScript",
+        icon: <FaJs className="text-yellow-400 text-5xl" />,
+      },
+      {
+        skill: "TypeScript",
+        icon: <SiTypescript className="text-blue-500 text-5xl" />,
+      },
+      {
+        skill: "React.js",
+        icon: <FaReact className="text-blue-400 text-5xl" />,
+      },
+      // {
+      //   skill: "Redux",
+      //   icon: <SiRedux className="text-purple-600 text-5xl" />,
+      // },
+      {
+        skill: "Redux Toolkit",
+        icon: <SiRedux className="text-purple-600 text-5xl" />,
+      },
+      {
+        skill: "RTK Query",
+        icon: <SiRedux className="text-pink-500 text-5xl" />, 
+      },
+      {
+        skill: "Next.js",
+        icon: <SiNextdotjs className="text-white text-5xl" />,
+      },
     ],
   },
   {
     name: "Backend Development",
     icon: <FaServer className="text-sky-400 text-xl" />,
     skills: [
-      { skill: "Node.js", icon: <FaNodeJs className="text-green-600 text-5xl" /> },
-      { skill: "Express.js", icon: <SiExpress className="text-white text-5xl" /> },
-      { skill: "MongoDB", icon: <SiMongodb className="text-green-500 text-5xl" /> },
-      { skill: "PostgreSQL", icon: <SiPostgresql className="text-blue-500 text-5xl" /> },
-      { skill: "Mongoose", icon: <SiMongoose className="text-green-600 text-5xl" /> },
+      {
+        skill: "Node.js",
+        icon: <FaNodeJs className="text-green-600 text-5xl" />,
+      },
+      {
+        skill: "Express.js",
+        icon: <SiExpress className="text-white text-5xl" />,
+      },
+      {
+        skill: "MongoDB",
+        icon: <SiMongodb className="text-green-500 text-5xl" />,
+      },
+      {
+        skill: "Mongoose",
+        icon: <SiMongoose className="text-green-600 text-5xl" />,
+      },
+      {
+        skill: "PostgreSQL",
+        icon: <SiPostgresql className="text-blue-500 text-5xl" />,
+      },
+      
       { skill: "MySQL", icon: <SiMysql className="text-blue-600 text-5xl" /> },
     ],
   },
@@ -59,8 +101,14 @@ const skillCategories = [
     icon: <FaDatabase className="text-sky-400 text-xl" />,
     skills: [
       { skill: "C", icon: <SiC className="text-blue-700 text-5xl" /> },
-      { skill: "C++", icon: <SiCplusplus className="text-blue-600 text-5xl" /> },
-      { skill: "Python", icon: <FaPython className="text-yellow-400 text-5xl" /> },
+      {
+        skill: "C++",
+        icon: <SiCplusplus className="text-blue-600 text-5xl" />,
+      },
+      {
+        skill: "Python",
+        icon: <FaPython className="text-yellow-400 text-5xl" />,
+      },
       { skill: "Java", icon: <FaJava className="text-orange-500 text-5xl" /> },
     ],
   },
@@ -108,13 +156,17 @@ const Skills = () => {
                     key={index}
                     data-aos="zoom-in"
                     data-aos-delay={index * 50}
-                    className="group bg-gray-800/50 backdrop-blur-md rounded-xl border border-gray-700 shadow-lg p-6 flex flex-col items-center text-center 
-                    transform transition-all duration-500 ease-out hover:scale-110 hover:-translate-y-2 hover:border-sky-500 hover:shadow-sky-500/40"
+                    className="group bg-gray-800/50 backdrop-blur-md rounded-xl border border-gray-700 shadow-lg 
+  p-6 flex flex-col items-center text-center transform transition-transform duration-500 ease-out 
+  hover:scale-110 hover:-translate-y-2 hover:border-sky-500 hover:shadow-sky-500/40"
                   >
-                    <div className="mb-4 transform transition-transform duration-500 group-hover:scale-125 group-hover:rotate-6">
+                    {/* Icon */}
+                    <div className="mb-4 transition-transform duration-500 ease-in-out group-hover:scale-110">
                       {skill.icon}
                     </div>
-                    <span className="text-lg font-medium text-white transition-colors duration-300 group-hover:text-sky-400">
+
+                    {/* Text */}
+                    <span className="text-lg font-medium text-white transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:text-sky-400">
                       {skill.skill}
                     </span>
                   </div>

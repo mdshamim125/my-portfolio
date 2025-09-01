@@ -4,6 +4,7 @@ import {
   FaServer,
   FaCode,
   FaArrowRight,
+  FaArrowLeft,
 } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { projectsData } from "./data/projects";
@@ -34,7 +35,7 @@ const ProjectCard = ({ project, index }) => {
       className="bg-gray-800 rounded-2xl shadow-xl overflow-hidden border border-gray-700 hover:border-blue-500/50 hover:shadow-blue-900/30 transition-all duration-500"
     >
       {/* Image Section */}
-      <div className="relative h-72 group overflow-hidden">
+      <div className="relative h-72group overflow-hidden">
         <img
           src={project.imageUrl}
           alt={project.title}
@@ -153,11 +154,8 @@ const ProjectCard = ({ project, index }) => {
   );
 };
 
-const Projects = () => {
+const AllProjects = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.15 });
-
-  // Limit projects to 4
-  const displayedProjects = projectsData.slice(0, 4);
 
   return (
     <section id="projects" className="py-24 bg-[#0f1c31] text-white">
@@ -168,32 +166,32 @@ const Projects = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-200 mb-4 relative inline-block">
-            <span className="relative z-10">Featured Projects</span>
+            <span className="relative z-10">All Projects</span>
             <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-900/40 -z-10 transform -rotate-1" />
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            A curated selection of my work showcasing problem-solving, design,
-            and modern development practices.
+          <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+            Explore all my projects with detailed features, technologies, and
+            live demos. Each project is built with modern web development tools
+            and best practices.
           </p>
         </motion.div>
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {displayedProjects.map((project, index) => (
+          {projectsData.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
-
-        {/* View All Projects Button */}
-        <div className="mt-12 text-right">
+        {/* Back to Home Button */}
+        <div className="mt-12 text-left">
           <Link
-            to="/projects"
+            to="/"
             className="inline-flex items-center gap-1.5 text-sm text-white font-medium bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 px-3.5 py-2.5 rounded-md shadow-md transition-all duration-300"
           >
-            View All Projects <FaArrowRight size={12} />
+            <FaArrowLeft size={12} /> Back to Home
           </Link>
         </div>
       </div>
@@ -201,4 +199,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default AllProjects;

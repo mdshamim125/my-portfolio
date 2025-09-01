@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const navLinks = [
-  { title: "Home", href: "#intro" },
+  { title: "Home", href: "/" },
   { title: "Skills", href: "#skills" },
   { title: "Projects", href: "#projects" },
   { title: "Education", href: "#education" },
@@ -77,7 +77,7 @@ const Navbar = () => {
               <div className="absolute -inset-0.5 rounded-md bg-gradient-to-r from-sky-400 to-indigo-500 opacity-30 blur-sm"></div>
             </div>
             <div className="ml-3">
-              <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-indigo-400 hidden sm:block">
+              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-indigo-400 hidden sm:block">
                 Md Shamim
               </span>
               <span className="text-xs text-gray-400 hidden sm:block">
@@ -88,7 +88,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden text-xl md:flex items-center space-x-4">
           {navLinks.map((link) => (
             <motion.a
               key={link.title}
