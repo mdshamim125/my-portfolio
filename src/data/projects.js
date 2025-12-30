@@ -1,5 +1,111 @@
 export const projectsData = [
   {
+  id: 6,
+  title: "Tour Management System",
+  shortDesc: "Tour booking platform with OTP auth & SSLCommerz payment",
+  imageUrl: "https://i.ibb.co.com/s9Jz1yzP/Screenshot-2025-12-29-211709.png",
+  description:
+    "Tour Management System is a full-stack web application that allows users to discover, filter, and book tours across Bangladesh. It includes secure authentication, OTP verification, online payments via SSLCommerz, and role-based dashboards for admins and super-admins.",
+  details: {
+    overview: `Tour Management System is a scalable and secure tour booking platform built for real-world use. Users can browse and filter tours, book tours with a selected date, and complete payments through SSLCommerz. The system supports OTP-based account verification, JWT authentication, role-based access control, and powerful admin dashboards for managing tours, users, guides, bookings, and divisions.`,
+    credentials: {
+      user: {
+        email: "cse138093brur@gmail.com",
+        password: "123qaz!Q",
+      },
+      admin: {
+        email: "super@gmail.com",
+        password: "12345678",
+      },
+    },
+    features: [
+      {
+        title: "Authentication & Authorization",
+        points: [
+          "User registration via Email and Google authentication.",
+          "OTP verification required to activate accounts.",
+          "JWT-based authentication with access and refresh tokens.",
+          "Role-Based Access Control (User, Admin, Super-Admin).",
+          "Protected routes and secure session handling.",
+        ],
+      },
+      {
+        title: "Tour Browsing & Filtering",
+        points: [
+          "Browse all available tours across Bangladesh.",
+          "Search tours by keywords.",
+          "Filter tours by division and price range.",
+          "Paginated tour listing for better performance.",
+          "Detailed tour pages with images, price, and description.",
+        ],
+      },
+      {
+        title: "Booking Management",
+        points: [
+          "Authenticated users can book tours with a selected date.",
+          "Bookings are initially created with pending status.",
+          "Users can view their complete booking history.",
+        ],
+      },
+      {
+        title: "Payment Integration",
+        points: [
+          "Online payment integration using SSLCommerz.",
+          "Automatic redirection to payment gateway.",
+          "Handles payment success and failure callbacks.",
+          "Booking and payment statuses updated after validation.",
+        ],
+      },
+      {
+        title: "Admin & Super-Admin Dashboard",
+        points: [
+          "Manage users (list, update, deactivate).",
+          "Create, update, and delete tours.",
+          "Manage and confirm/cancel bookings.",
+          "Assign guides to tours.",
+          "Manage tour divisions.",
+          "Super-admin can manage admins and system overview.",
+        ],
+      },
+      {
+        title: "Media, Validation & Security",
+        points: [
+          "Image upload and hosting via Cloudinary.",
+          "Invoice generation with shareable URLs.",
+          "Zod-based schema validation for forms and APIs.",
+          "Passwords hashed using bcrypt.",
+          "OTP handling with Redis.",
+          "Secure HTTPS communication for payments and sensitive data.",
+        ],
+      },
+    ],
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Redux Toolkit",
+      "RTK Query",
+      "Tailwind CSS",
+      "Axios",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Redis",
+      "JWT",
+      "Passport.js",
+      "bcrypt",
+      "Zod",
+      "Cloudinary",
+      "SSLCommerz",
+    ],
+  },
+  liveUrl: "https://tour-management-frontend-seven.vercel.app",
+  githubUrl: "https://github.com/mdshamim125/university-project-tour-management-frontend",
+  serverGithubUrl: "https://github.com/mdshamim125/university-project/tour-management-backend",
+}
+,
+  {
     id: 2,
     title: "JobSphere  ( Team Project )",
     shortDesc: "Job portal for seekers & recruiters with advanced features",
