@@ -82,7 +82,7 @@ const Navbar = () => {
             href="https://drive.google.com/file/d/1jIIiNBmAZvSmOPnSfg2JrhCjNKOw_To_/view"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-4 px-4 py-2 text-sm font-medium rounded-md bg-sky-500 text-white hover:bg-sky-600 transition"
+            className="ml-4 px-4 py-2 text-sm font-medium  bg-gradient-to-r from-sky-600 to-indigo-600 text-white rounded-lg"
           >
             Resume
           </a>

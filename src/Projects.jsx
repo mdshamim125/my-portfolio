@@ -160,7 +160,7 @@ const Projects = () => {
   const displayedProjects = projectsData.slice(0, 4);
 
   return (
-    <section id="projects" className="py-24 bg-[#0f1c31] text-white">
+    <section id="projects" className="py-16 bg-[#0f1c31] text-white">
       <div className="container mx-auto px-6 max-w-6xl">
         {/* Section Title */}
         <motion.div
@@ -168,7 +168,7 @@ const Projects = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-200 mb-4 relative inline-block">
             <span className="relative z-10">Featured Projects</span>
@@ -188,7 +188,7 @@ const Projects = () => {
         </div>
 
         {/* View All Projects Button */}
-        <div className="mt-12 text-right">
+        <div className="mt-6 text-right">
           <Link
             to="/projects"
             className="inline-flex items-center gap-1.5 text-sm text-white font-medium bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 px-3.5 py-2.5 rounded-md shadow-md transition-all duration-300"

@@ -134,10 +134,10 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className="py-24 bg-gray-900">
+    <section id="skills" className="py-16 bg-gray-900">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
-        <div className="text-center mb-20" data-aos="fade-up">
+        <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-4xl font-bold text-white mb-4">
             Technical Expertise
           </h2>
@@ -148,7 +148,7 @@ const Skills = () => {
         </div>
 
         {/* Categories */}
-        <div className="space-y-20">
+        <div className="space-y-12">
           {skillCategories.map((category, cIndex) => (
             <div key={cIndex}>
               {/* Category Header */}

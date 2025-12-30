@@ -115,7 +115,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-gray-900 py-24 relative overflow-hidden"
+      className="bg-slate-800 py-16 relative overflow-hidden"
     >
       {/* Background decorations */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-sky-500/5 rounded-full blur-3xl"></div>
@@ -123,7 +123,7 @@ const Contact = () => {
       <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-6 max-w-6xl relative z-10">
-        <div className="text-center mb-16" data-aos="fade-up">
+        <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-4xl font-bold text-white mb-4 relative inline-block">
             <span className="relative z-10">Get In Touch</span>
             <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-900/40 -z-10 transform -rotate-1"></span>
@@ -138,7 +138,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           {/* Contact Form */}
           <div
-            className="rounded-xl border border-gray-800 bg-gray-800/50 p-8 backdrop-blur-sm shadow-lg h-full flex flex-col transform transition-all duration-500 hover:shadow-blue-900/20"
+            className="rounded-xl border border-gray-800 bg-gray-900/50 p-8 backdrop-blur-sm shadow-lg h-full flex flex-col transform transition-all duration-500 hover:shadow-blue-900/20"
             data-aos="fade-right"
             data-aos-delay="100"
           >
@@ -268,11 +268,15 @@ const Contact = () => {
             data-aos="fade-left"
             data-aos-delay="200"
           >
-            <div className="rounded-xl border border-gray-800 bg-gray-800/50 p-8 backdrop-blur-sm shadow-lg h-full flex flex-col transform transition-all duration-500 hover:shadow-blue-900/20">
+            <div className="rounded-xl border border-gray-800 bg-gray-900/50 p-8 backdrop-blur-sm shadow-lg h-full flex flex-col transform transition-all duration-500 hover:shadow-blue-900/20">
               <div className="mb-8 border-b border-gray-700 pb-6">
                 <h3 className="text-2xl font-bold text-white mb-2 flex items-center">
                   {/* <FaUserTie className="mr-3 text-sky-400" /> */}
-                  <img src={fb_profile} className="h-16 w-16 rounded-full mr-4" alt="fb_image" />
+                  <img
+                    src={fb_profile}
+                    className="h-16 w-16 rounded-full mr-4"
+                    alt="fb_image"
+                  />
                   Md Shamim
                 </h3>
                 <p className="text-gray-300 flex items-center space-x-2 mt-2">

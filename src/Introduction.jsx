@@ -131,7 +131,7 @@ py-20 sm:py-24 md:py-28 lg:py-28"
 
               {/* Profile Image */}
               <img
-                src="https://i.ibb.co.com/G4SDhs3n/Portfolio-Profile.png"
+                src="https://i.ibb.co.com/ZpZJfb4g/Profile-Facebook-3-removebg-preview.png"
                 alt="Md Shamim"
                 className="
         relative z-10
@@ -148,9 +148,9 @@ py-20 sm:py-24 md:py-28 lg:py-28"
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section id="about" ref={aboutRef} className="py-28 bg-slate-800">
+      <section id="about" ref={aboutRef} className="py-16 bg-slate-800">
         <div className="container mx-auto px-6 max-w-6xl">
-          <div className="text-center mb-20">
+          <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
               A focused overview of my skills, experience, and professional
@@ -165,38 +165,42 @@ py-20 sm:py-24 md:py-28 lg:py-28"
               className="rounded-xl shadow-xl border border-slate-700"
             />
 
-            <div className="space-y-6">
+            <div className="space-y-3">
               <h3 className="text-2xl font-semibold text-white">
                 Full-Stack Web Developer
               </h3>
 
               <p className="text-gray-300 leading-relaxed">
-                I specialize in building modern, scalable web applications using
-                the MERN stack with TypeScript. My focus is on clean code,
-                performance optimization, and intuitive user interfaces.
+                I am a Full-Stack Web Developer focused on building scalable,
+                production-ready web applications using the MERN stack and
+                TypeScript, with an emphasis on performance, maintainability,
+                and user experience.
               </p>
 
               <p className="text-gray-300 leading-relaxed">
-                I have experience with REST APIs, authentication, database
-                design, and state management using Redux Toolkit and React
-                Query.
+                I have hands-on experience building RESTful APIs, implementing
+                secure authentication systems, designing efficient database
+                schemas, and managing application state using Redux Toolkit and
+                TanStack Query.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                 <InfoCard
                   icon={<FaCode />}
                   title="Tech Stack"
-                  text="React, Node.js, MongoDB"
+                  text="MERN Stack | Next.js | PostgreSQL | Prisma ORM"
                 />
+
                 <InfoCard
                   icon={<FaBriefcase />}
                   title="Projects"
-                  text="10+ Real-World Projects"
+                  text="15+ Full-Stack Web Applications"
                 />
+
                 <InfoCard
                   icon={<FaGraduationCap />}
                   title="Education"
-                  text="BSc in CSE (BRUR)"
+                  text="BSc in Computer Science & Engineering (BRUR)"
                 />
               </div>
             </div>
