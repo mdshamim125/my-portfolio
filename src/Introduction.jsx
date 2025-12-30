@@ -115,16 +115,32 @@ py-20 sm:py-24 md:py-28 lg:py-28"
             transition={{ duration: 0.8 }}
             className="hidden lg:flex justify-center"
           >
-            <div className="relative">
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-500 blur-xl opacity-40" />
+            <div className="relative flex items-center justify-center">
+              {/* Outer Glow */}
+              <div
+                className="absolute w-[420px] h-[420px] rounded-full 
+      bg-gradient-to-br from-sky-500 to-indigo-500 
+      blur-2xl opacity-30"
+              />
+
+              {/* Border Ring */}
+              <div
+                className="absolute w-[360px] h-[360px] rounded-full 
+      border-4 border-sky-500/40"
+              />
+
+              {/* Profile Image */}
               <img
                 src="https://i.ibb.co.com/G4SDhs3n/Portfolio-Profile.png"
                 alt="Md Shamim"
-                className="relative z-10
-             w-64 sm:w-72 md:w-80 lg:w-[400px]
-             rounded-2xl
-             border border-slate-700
-             shadow-2xl"
+                className="
+        relative z-10
+        w-[320px] h-[320px]
+        object-cover
+        rounded-full
+        border-4 border-slate-800
+        shadow-2xl
+      "
               />
             </div>
           </motion.div>
