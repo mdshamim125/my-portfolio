@@ -1,110 +1,111 @@
 export const projectsData = [
   {
-  id: 6,
-  title: "Tour Management System",
-  shortDesc: "Tour booking platform with OTP auth & SSLCommerz payment",
-  imageUrl: "https://i.ibb.co.com/s9Jz1yzP/Screenshot-2025-12-29-211709.png",
-  description:
-    "Tour Management System is a full-stack web application that allows users to discover, filter, and book tours across Bangladesh. It includes secure authentication, OTP verification, online payments via SSLCommerz, and role-based dashboards for admins and super-admins.",
-  details: {
-    overview: `Tour Management System is a scalable and secure tour booking platform built for real-world use. Users can browse and filter tours, book tours with a selected date, and complete payments through SSLCommerz. The system supports OTP-based account verification, JWT authentication, role-based access control, and powerful admin dashboards for managing tours, users, guides, bookings, and divisions.`,
-    credentials: {
-      user: {
-        email: "cse138093brur@gmail.com",
-        password: "123qaz!Q",
+    id: 6,
+    title: "Tour Management System",
+    shortDesc: "Tour booking platform with OTP auth & SSLCommerz payment",
+    imageUrl: "https://i.ibb.co.com/s9Jz1yzP/Screenshot-2025-12-29-211709.png",
+    description:
+      "Tour Management System is a full-stack web application that allows users to discover, filter, and book tours across Bangladesh. It includes secure authentication, OTP verification, online payments via SSLCommerz, and role-based dashboards for admins and super-admins.",
+    details: {
+      overview: `Tour Management System is a scalable and secure tour booking platform built for real-world use. Users can browse and filter tours, book tours with a selected date, and complete payments through SSLCommerz. The system supports OTP-based account verification, JWT authentication, role-based access control, and powerful admin dashboards for managing tours, users, guides, bookings, and divisions.`,
+      credentials: {
+        user: {
+          email: "cse138093brur@gmail.com",
+          password: "123qaz!Q",
+        },
+        admin: {
+          email: "super@gmail.com",
+          password: "12345678",
+        },
       },
-      admin: {
-        email: "super@gmail.com",
-        password: "12345678",
-      },
+      features: [
+        {
+          title: "Authentication & Authorization",
+          points: [
+            "User registration via Email and Google authentication.",
+            "OTP verification required to activate accounts.",
+            "JWT-based authentication with access and refresh tokens.",
+            "Role-Based Access Control (User, Admin, Super-Admin).",
+            "Protected routes and secure session handling.",
+          ],
+        },
+        {
+          title: "Tour Browsing & Filtering",
+          points: [
+            "Browse all available tours across Bangladesh.",
+            "Search tours by keywords.",
+            "Filter tours by division and price range.",
+            "Paginated tour listing for better performance.",
+            "Detailed tour pages with images, price, and description.",
+          ],
+        },
+        {
+          title: "Booking Management",
+          points: [
+            "Authenticated users can book tours with a selected date.",
+            "Bookings are initially created with pending status.",
+            "Users can view their complete booking history.",
+          ],
+        },
+        {
+          title: "Payment Integration",
+          points: [
+            "Online payment integration using SSLCommerz.",
+            "Automatic redirection to payment gateway.",
+            "Handles payment success and failure callbacks.",
+            "Booking and payment statuses updated after validation.",
+          ],
+        },
+        {
+          title: "Admin & Super-Admin Dashboard",
+          points: [
+            "Manage users (list, update, deactivate).",
+            "Create, update, and delete tours.",
+            "Manage and confirm/cancel bookings.",
+            "Assign guides to tours.",
+            "Manage tour divisions.",
+            "Super-admin can manage admins and system overview.",
+          ],
+        },
+        {
+          title: "Media, Validation & Security",
+          points: [
+            "Image upload and hosting via Cloudinary.",
+            "Invoice generation with shareable URLs.",
+            "Zod-based schema validation for forms and APIs.",
+            "Passwords hashed using bcrypt.",
+            "OTP handling with Redis.",
+            "Secure HTTPS communication for payments and sensitive data.",
+          ],
+        },
+      ],
+      technologies: [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Redux Toolkit",
+        "RTK Query",
+        "Tailwind CSS",
+        "Axios",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Redis",
+        "JWT",
+        "Passport.js",
+        "bcrypt",
+        "Zod",
+        "Cloudinary",
+        "SSLCommerz",
+      ],
     },
-    features: [
-      {
-        title: "Authentication & Authorization",
-        points: [
-          "User registration via Email and Google authentication.",
-          "OTP verification required to activate accounts.",
-          "JWT-based authentication with access and refresh tokens.",
-          "Role-Based Access Control (User, Admin, Super-Admin).",
-          "Protected routes and secure session handling.",
-        ],
-      },
-      {
-        title: "Tour Browsing & Filtering",
-        points: [
-          "Browse all available tours across Bangladesh.",
-          "Search tours by keywords.",
-          "Filter tours by division and price range.",
-          "Paginated tour listing for better performance.",
-          "Detailed tour pages with images, price, and description.",
-        ],
-      },
-      {
-        title: "Booking Management",
-        points: [
-          "Authenticated users can book tours with a selected date.",
-          "Bookings are initially created with pending status.",
-          "Users can view their complete booking history.",
-        ],
-      },
-      {
-        title: "Payment Integration",
-        points: [
-          "Online payment integration using SSLCommerz.",
-          "Automatic redirection to payment gateway.",
-          "Handles payment success and failure callbacks.",
-          "Booking and payment statuses updated after validation.",
-        ],
-      },
-      {
-        title: "Admin & Super-Admin Dashboard",
-        points: [
-          "Manage users (list, update, deactivate).",
-          "Create, update, and delete tours.",
-          "Manage and confirm/cancel bookings.",
-          "Assign guides to tours.",
-          "Manage tour divisions.",
-          "Super-admin can manage admins and system overview.",
-        ],
-      },
-      {
-        title: "Media, Validation & Security",
-        points: [
-          "Image upload and hosting via Cloudinary.",
-          "Invoice generation with shareable URLs.",
-          "Zod-based schema validation for forms and APIs.",
-          "Passwords hashed using bcrypt.",
-          "OTP handling with Redis.",
-          "Secure HTTPS communication for payments and sensitive data.",
-        ],
-      },
-    ],
-    technologies: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "Redux Toolkit",
-      "RTK Query",
-      "Tailwind CSS",
-      "Axios",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Mongoose",
-      "Redis",
-      "JWT",
-      "Passport.js",
-      "bcrypt",
-      "Zod",
-      "Cloudinary",
-      "SSLCommerz",
-    ],
+    liveUrl: "https://tour-management-frontend-seven.vercel.app",
+    githubUrl:
+      "https://github.com/mdshamim125/university-project-tour-management-frontend",
+    serverGithubUrl:
+      "https://github.com/mdshamim125/university-project/tour-management-backend",
   },
-  liveUrl: "https://tour-management-frontend-seven.vercel.app",
-  githubUrl: "https://github.com/mdshamim125/university-project-tour-management-frontend",
-  serverGithubUrl: "https://github.com/mdshamim125/university-project/tour-management-backend",
-}
-,
   {
     id: 2,
     title: "JobSphere  ( Team Project )",
@@ -227,7 +228,7 @@ export const projectsData = [
     id: 1,
     title: "Contest Hub",
     shortDesc: "Contest platform with multi-user dashboards",
-    imageUrl: "https://i.ibb.co/nZkm1Cb/Annotation-2025-05-28-181158.png",
+    imageUrl: "https://i.ibb.co.com/gZ4wq5yn/image.png",
     description:
       "Contest Hub is a comprehensive web application designed for administrators, creators, and users to efficiently manage contests, submissions, and winners with secure authentication and real-time updates.",
     details: {
@@ -402,6 +403,88 @@ export const projectsData = [
     githubUrl: "https://github.com/mdshamim125/digital-wallet-frontend",
     serverGithubUrl:
       "https://github.com/mdshamim125/digital-wallet-management-api",
+  },
+  {
+    id: 7,
+    title: "E-Library Dashboard",
+    shortDesc: "Digital library SPA with Google auth & admin management",
+    imageUrl: "https://i.ibb.co.com/4ndQ0wQd/image.png",
+    description:
+      "E-Library Dashboard is a Single Page Application that allows users to browse, search, and borrow digital books securely. It features Passport.js authentication, Google OAuth 2.0, role-based access control, and admin tools for managing books and users.",
+    details: {
+      overview: `E-Library Dashboard is a modern digital library platform designed to provide secure access to a searchable book collection. Users can authenticate using Passport.js or Google OAuth 2.0, borrow books, and track their borrowing history. Admins have access to protected dashboards where they can manage books and users. The system follows RESTful API principles and implements role-based access control with secure input handling.`,
+      credentials: {
+        admin: {
+          email: "admin@gmail.com",
+          password: "123qaz!Q",
+        },
+        user: {
+          email: "mdsr9510@gmail.com",
+          password: "123qaz!Q",
+        },
+      },
+      features: [
+        {
+          title: "Authentication & Authorization",
+          points: [
+            "User login using Passport.js (Local Strategy).",
+            "Google authentication with OAuth 2.0.",
+            "Role-based access control for User and Admin.",
+            "Protected routes for sensitive operations.",
+          ],
+        },
+        {
+          title: "Book Browsing & Search",
+          points: [
+            "Searchable digital book collection.",
+            "View detailed book information.",
+            "Secure borrowing workflow for authenticated users.",
+          ],
+        },
+        {
+          title: "Borrowing History",
+          points: [
+            "Users can view previously borrowed books.",
+            "Loan history stored and retrieved securely via APIs.",
+          ],
+        },
+        {
+          title: "Admin Dashboard",
+          points: [
+            "Add new books to the library.",
+            "Edit existing book details.",
+            "Remove books from the collection.",
+            "Manage users and borrowing records.",
+          ],
+        },
+        {
+          title: "API & Security",
+          points: [
+            "RESTful APIs for books, users, and loans.",
+            "Simulated OAuth token-based access control.",
+            "Secure input handling in search forms.",
+            "Basic access control and route protection.",
+          ],
+        },
+      ],
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Redux Toolkit",
+        "RTK Query",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Axios",
+        "Node.js",
+        "Express.js",
+        "Passport.js",
+        "MongoDB",
+        "Mongoose",
+      ],
+    },
+    liveUrl: "https://e-library-frontend-six.vercel.app",
+    githubUrl: "https://github.com/mdshamim125/e-library-frontend",
+    serverGithubUrl: "https://github.com/mdshamim125/e-library-backend",
   },
   {
     id: 3,
